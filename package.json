@@ -35,7 +35,7 @@
 		"url": "https://github.com/shama/jmpress.js/issues"
 	},
 	"webpackTemplate": {
-		"version": "0.1.2",
+		"version": "0.1.3",
 		"modules": {},
 		"options": {
 			"cacheManifest": false,
