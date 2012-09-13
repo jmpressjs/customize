@@ -1,5 +1,5 @@
 @echo off
-npm install wpt -g
-npm install wpt
+start /B /WAIT cmd /c npm install wpt -g
+start /B /WAIT cmd /c npm install wpt
 wpt init
-npm install
+start /B /WAIT cmd /c npm install
