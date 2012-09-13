@@ -1,0 +1,49 @@
+{
+	"name": "jmpress.js-customize",
+	"version": "0.1.0",
+	"author": "Kyle Robinson Young @shama & Tobias Koppers @sokra",
+	"devDependencies": {
+		"wpt": "0.1.x",
+		"webpack": "0.6.x",
+		"webpack-dev-middleware": "0.6.x",
+		"enhanced-require": "0.2.x",
+		"jade-loader": "0.1.x",
+		"json-loader": "0.1.x",
+		"express": "3.0.x"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"maintainers": [
+		{
+			"name": "Kyle Robinson Young",
+			"url": "https://github.com/shama"
+		},
+		{
+			"name": "Tobias Koppers",
+			"url": "https://github.com/sokra"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/shama/jmpress.js.git"
+	},
+	"bugs": {
+		"url": "https://github.com/shama/jmpress.js/issues"
+	},
+	"webpackTemplate": {
+		"version": "0.1.2",
+		"modules": {},
+		"options": {
+			"cacheManifest": false,
+			"appName": "jmpress.js-customize",
+			"author": "Kyle Robinson Young @shama & Tobias Koppers @sokra",
+			"authorUrl": "https://github.com/jmpressjs",
+			"licenseType": "MIT",
+			"licenseUrl": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	}
+}
