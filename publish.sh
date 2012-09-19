@@ -1,9 +1,9 @@
 #!/bin/bash
 git checkout gh-pages
 git merge master
-rm -rf assets
+rm -rf public
 node _template/publish
-git add index.html assets
-git add index.html assets -u
+git add index.html public
+git add index.html public -u
 git commit -m "Publish"
 git checkout master
