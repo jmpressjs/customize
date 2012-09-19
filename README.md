@@ -14,7 +14,7 @@ This install dependencies and init the web app template.
 ### Development
 
 Start the development server with `dev-server`.
-Then open `dev-server.html` in your browser.
+Then open [http://localhost:8081/](http://localhost:8081/) in your browser.
 
 ### Publish
 
