@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"author": "Kyle Robinson Young @shama & Tobias Koppers @sokra",
 	"devDependencies": {
-		"wpt": "0.2.x",
+		"wpt": "0.3.x",
 		"webpack": "0.6.x",
 		"webpack-dev-server": "0.6.x",
 		"enhanced-require": "0.2.x",
@@ -35,8 +35,19 @@
 		"url": "https://github.com/shama/jmpress.js/issues"
 	},
 	"webpackTemplate": {
-		"version": "0.2.0",
-		"modules": {},
+		"version": "0.3.3",
+		"modules": {
+			"jquery": {
+				"templates": "https://raw.github.com/webpack/jquery-wpt-module/master",
+				"template": "https://raw.github.com/webpack/jquery-wpt-module/v1.8.1",
+				"version": "1.8.1"
+			},
+			"bootstrap": {
+				"templates": "https://raw.github.com/webpack/bootstrap-wpt-module/master",
+				"template": "https://raw.github.com/webpack/bootstrap-wpt-module/v2.1.1",
+				"version": "2.1.1"
+			}
+		},
 		"options": {
 			"cacheManifest": false,
 			"appName": "jmpress.js-customize",
