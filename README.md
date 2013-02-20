@@ -2,24 +2,35 @@
 
 Create your own version of jmpress.js.
 
-## Contribute
-
-This app uses webpack-template (wpt).
-
 ### Setup
 
-Just execute `setup`.
-This install dependencies and init the web app template.
+``` javascript
+npm install
+npm install webpack webpack-dev-server -g
+```
 
 ### Development
 
-Start the development server with `dev-server`.
-Then open [http://localhost:8081/](http://localhost:8081/) in your browser.
+Start the development server with:
+
+``` javascript
+webpack-dev-server --content-page index.html --colors --progress --devtool eval
+```
+
+Then open [http://localhost:8080/](http://localhost:8080/) in your browser.
 
 ### Publish
 
 Commit all changes.
-Than execute `publish`.
-This publish the web app to the gh-pages branch.
+
+``` text
+git checkout gh-pages
+git merge master
+rm -rf assets
+webpack --optimize-minimize --progress --colors
+git add assets
+git commit -m "Publish"
+git checkout master
+```
 
 Finally `git push` the both branches.

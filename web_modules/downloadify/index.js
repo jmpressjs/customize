@@ -1,3 +1,2 @@
-require("script!./js/swfobject.js");
-require("script!./js/downloadify.min.js");
-module.exports = Downloadify;
+require("expose?swfobject!./js/swfobject.js");
+module.exports = require("exports?Downloadify!imports?Downloadify=>null!./js/downloadify.min.js");

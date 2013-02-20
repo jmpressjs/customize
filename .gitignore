@@ -1,20 +1,2 @@
-# will be installed by "wpt init"
-# /publish.bat # We have soome custom logic here
-# /publish.sh
-/dev-server.bat
-/dev-server.sh
-/server.bat
-/server.sh
-/_template
-
-# will be installed by "npm install"
 /node_modules
-
-# will be created by publishing or "wpt init"
-# you may remove these lines if you want to publish
-#  to a git repo. (i. e. in the gh-pages branch)
-/publishedStats.json
-/public
-/index.html
-/cache.manifest
-/server.js
+/assets

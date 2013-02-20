@@ -26,10 +26,10 @@ module.exports = function(element) {
 
 	function loadSetting(setting) {
 		config.components.forEach(function(component) {
-			element.find("#component-"+component.name).attr("checked", false);
+			element.find("#component-"+component.name).prop("checked", false);
 		});
 		setting.components.forEach(function(component) {
-			element.find("#component-"+component).attr("checked", true);
+			element.find("#component-"+component).prop("checked", true);
 		});
 	}
 	function invalidate() {
@@ -45,19 +45,23 @@ module.exports = function(element) {
 			if(init) {
 				require.ensure([], function(require) {
 					var downloadify = require("downloadify");
-					downloadify.create("downloadify", {
-						filename: function() {
-							return "jmpress.js";
-						},
-						data: function() {
-							return getFile();
-						},
-						swf: require("file/swf!./downloadify.swf"),
-						width: 78,
-						height: 28,
-						transparent: true,
-						downloadImage: require("file/png!./download.png")
-					});
+					try {
+						downloadify.create("downloadify", {
+							filename: function() {
+								return "jmpress.js";
+							},
+							data: function() {
+								return getFile();
+							},
+							swf: require("./downloadify.swf"),
+							width: 78,
+							height: 28,
+							transparent: true,
+							downloadImage: require("./download.png")
+						});
+					} catch(e) {
+						console.error(e);
+					}
 				});
 				return;
 			}

@@ -3,12 +3,17 @@
 	"version": "0.1.1",
 	"author": "Kyle Robinson Young @shama & Tobias Koppers @sokra",
 	"devDependencies": {
-		"wpt": "0.3.x",
-		"webpack": "0.6.x",
-		"webpack-dev-server": "0.6.x",
-		"enhanced-require": "0.2.x",
-		"jade-loader": "0.1.x",
-		"json-loader": "0.1.x",
+		"webpack": "0.9.x",
+		"webpack-dev-server": "0.9.x",
+		"jade-loader": "0.5.x",
+		"json-loader": "0.5.x",
+		"css-loader": "0.5.x",
+		"style-loader": "0.5.x",
+		"file-loader": "0.5.x",
+		"raw-loader": "0.5.x",
+		"imports-loader": "0.5.x",
+		"exports-loader": "0.5.x",
+		"expose-loader": "0.5.x",
 		"express": "3.0.x"
 	},
 	"licenses": [
@@ -26,34 +31,5 @@
 			"name": "Tobias Koppers",
 			"url": "https://github.com/sokra"
 		}
-	],
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/shama/jmpress.js.git"
-	},
-	"bugs": {
-		"url": "https://github.com/shama/jmpress.js/issues"
-	},
-	"webpackTemplate": {
-		"version": "0.3.3",
-		"modules": {
-			"jquery": {
-				"templates": "https://raw.github.com/webpack/jquery-wpt-module/master",
-				"template": "https://raw.github.com/webpack/jquery-wpt-module/v1.8.1",
-				"version": "1.8.1"
-			},
-			"bootstrap": {
-				"templates": "https://raw.github.com/webpack/bootstrap-wpt-module/master",
-				"template": "https://raw.github.com/webpack/bootstrap-wpt-module/v2.1.1",
-				"version": "2.1.1"
-			}
-		},
-		"options": {
-			"cacheManifest": false,
-			"appName": "jmpress.js-customize",
-			"author": "Kyle Robinson Young @shama & Tobias Koppers @sokra",
-			"nodeServer": false,
-			"customWebpackOptions": false
-		}
-	}
+	]
 }

@@ -2,11 +2,11 @@ var config = require("./config.json");
 var jmpressPackage = require("jmpress.js/package.json");
 
 function getComponent(component) {
-	return require("raw!jmpress.js/src/components/"+component+".js");
+	return require("!raw!jmpress.js/src/components/"+component+".js");
 }
 
 function getPlugin(plugin) {
-	return require("raw!jmpress.js/src/plugins/"+plugin+".js");
+	return require("!raw!jmpress.js/src/plugins/"+plugin+".js");
 }
 
 function getHeader() {
