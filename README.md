@@ -27,6 +27,7 @@ Commit all changes.
 git checkout gh-pages
 git merge master
 rm -rf assets
+git rm assets -r
 webpack --optimize-minimize --progress --colors
 git add assets
 git commit -m "Publish"
