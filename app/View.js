@@ -69,7 +69,7 @@ module.exports = function(element) {
 				var build = require("./build");
 				var options = {};
 				config.components.forEach(function(component) {
-					options[component.name] = element.find("#component-"+component.name).attr("checked");
+					options[component.name] = element.find("#component-"+component.name).prop("checked");
 				});
 				return build(options);
 			}
