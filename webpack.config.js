@@ -1,4 +1,5 @@
 var path = require("path");
+var webpack = require("webpack");
 module.exports = {
 	entry: "./app/app.js",
 	output: {
@@ -16,16 +17,19 @@ module.exports = {
 			{ test: /\.swf$/,  loader: "file-loader" }
 		]
 	},
-	provide: {
-		$: "jquery",
-		jQuery: "jquery"
+	resolve: {
+		alias: {
+			jquery: "jquery-2.0.3.js"
+		}
 	},
-	amd: {
-		jQuery: true
-	},
-	cache: true,
-	optimize: {
-		maxChunks: 10,
-		// minChunkSize: 10000
-	}
+	plugins: [
+		new webpack.ProvidePlugin({
+			$: "jquery",
+			jQuery: "jquery"
+		}),
+		new webpack.optimize.LimitChunkCountPlugin({
+			maxChunks: 10
+		})
+	],
+	cache: true
 };

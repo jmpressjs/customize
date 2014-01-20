@@ -14,10 +14,10 @@ npm install webpack webpack-dev-server -g
 Start the development server with:
 
 ``` javascript
-webpack-dev-server --content-page index.html --colors --progress --devtool eval
+webpack-dev-server --colors --progress --devtool eval
 ```
 
-Then open [http://localhost:8080/](http://localhost:8080/) in your browser.
+Then open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) in your browser.
 
 ### Publish
 
